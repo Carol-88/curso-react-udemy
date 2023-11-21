@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>ReactApp</title>
+</head>
+<body>
+
+    <div id="root"></div>
+    
+    <script type="text/babel">
+    //el type babel es para que lea html en codigo js (jsx) 
+
+    //divRoot referencia un elemento del html
+        const divRoot = document.querySelector('#root');
+    //h1Tag es una constante con una etiqueta html 
+    const nombre = 'Goku'
+        const h1Tag = <h1>Hola {nombre} </h1>;
+    //ReactDOM.render indica que se renderice h1Tag en divRoot
+        ReactDOM.render(h1Tag, divRoot);
+
+    //Este código renderiza h1Tag dentro de divRoot, divRoot hace referencia 
+    //al contenedor donde queremos mostrar el resultado final
+
+    </script>
+</body>
+</html>
